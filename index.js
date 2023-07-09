@@ -12,6 +12,8 @@ nextISSTimesForMyLocation((error, data) => {
   if (error) {
     return console.log("It didn't work!", error);
   }
-  
+
   printPassTimes(data);
 });
+
+module.exports = { printPassTimes };
